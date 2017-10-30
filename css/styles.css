@@ -102,7 +102,7 @@ input[type="checkbox"] {
 
 input[placeholder] {
   background: #f9e79f;
-  text-align: left;
+  text-align: right;
   font-size: 20px;
 }
 
@@ -118,8 +118,21 @@ input[type="radio"]:checked+label {
   font-weight: bold;
 }
 
-input:focus {
-  border: 1px solid #0c77d5;
+input:focus,
+textarea:focus {
+  border: 5px solid #0c77d5;
+}
+
+input,
+textarea,
+select {
+  transition: background-color 1s;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  background-color: #aed6f1;
 }
 
 .container {
@@ -167,18 +180,27 @@ input:focus {
 }
 
 .interests {
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  text-align: left;
 }
 
 .newsletter {
   margin-bottom: 0;
 }
 
+#zip {
+  width: 25%;
+}
+
 
 /*--- Media Queries ---*/
 
 @media (min-width: 768px) {
+
+  div {
+    display: flex;
+  }
 
   input[type="text"],
   input[type="email"],
@@ -199,42 +221,62 @@ input:focus {
     text-align: left;
     }
 
-    input:focus {
-      border: 1px solid #0c77d5;
-      transition: ease-in-out, width 2s ease-in-out;
-    }
+  input:focus,
+  textarea:focus {
+    border: 5px solid #0c77d5;
+  }
 
-    input[placeholder] {
-      background: #f9e79f;
-      text-align: left;
-      font-size: 20px;
-    }
+  input,
+  textarea,
+  select {
+    transition: background-color 1s;
+  }
 
-    .main-header,
-    .main-footer {
-      max-width: 700px;
-    }
+  input:hover,
+  textarea:hover,
+  select:hover {
+    background-color: #aed6f1;
+  }
 
-    .user_input {
-      width: auto;
-    }
+  input[placeholder]:hover {
+    background-color: #aed6f1;
+  }
 
-    .container {
-      display: inline-flex;
-      flex-direction: row;
-      margin-right: auto;
-    }
+  input[placeholder] {
+    background: #f9e79f;
+    text-align: right;
+    font-size: 20px;
+  }
 
-    #state {
-      width: 70%;
-    }
+  .main-header,
+  .main-footer {
+    max-width: 680px;
+  }
 
-    #topics {
-      width: 100%;
-    }
+  .user_input {
+    width: auto;
+  }
 
-    div {
-      display: flex;
-    }
+  .container {
+    display: inline-flex;
+    flex-direction: row;
+    margin-right: auto;
+  }
+
+  .zip {
+    margin-right: 90px;
+  }
+
+  #state {
+    width: 70%;
+  }
+
+  #topics {
+    width: 100%;
+  }
+
+  #zip {
+    width: 25%;
+  }
 
 }

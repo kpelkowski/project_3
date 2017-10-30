@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <title>The Code Review: Newsletter Sign Up</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="project_3/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
   </head>
   <body>
@@ -97,22 +97,22 @@
               <option value="Wyoming">WY</option>
             </select>
           </div>
-          <div>
-            <label class="container inln" for="zip">Zip Code</label>
-            <input class="user_input inln" type="number" id="zip" name="user_zip">
-          </div>
+
+            <label class="container zip" for="zip">Zip Code</label>
+            <input type="number" id="zip" name="user_zip">
+
 
        </fieldset>
        <hr class="separation">
 
        <fieldset>
          <legend class="newsletter">Newsletter:</legend>
-         <label class="interests">Select the newsletters you would like to recieve</label><br>
+         <p class="interests">Select the newsletters you would like to recieve</p><br>
            <input type="checkbox" id="HTML_news" value="HTML_news" name="newsletter"><label for="HTML_news"> HTML News</label><br>
            <input type="checkbox" id="CSS_news" value="CSS_news" name="newsletter"><label for="CSS_news"> CSS News</label><br>
            <input type="checkbox" id="JS_news" value="JS_news" name="newsletter"><label for="JS_news"> Javascript News</label><br>
 
-         <label class="interests">Newsletter format</label><br>
+         <p class="interests">Newsletter format</p><br>
              <input type="radio" id="HTML" value="HTML" name="news_format"><label class="option" for="HTML"> HTML</label><br>
              <input type="radio" id="plain" value="plain" name="news_format"><label class="option" for="plain"> Plain text</label><br>
          <label class="interests">Other topics you'd like to hear about</label><br>
