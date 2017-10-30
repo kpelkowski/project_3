@@ -68,7 +68,7 @@ input[type="email"],
 input[type="tel"],
 input[type="address"],
 input[type="city"],
-input[type="zip"],
+input[type="number"],
 select {
   background: white;
   border: none;
@@ -102,8 +102,7 @@ input[type="checkbox"] {
 
 input[placeholder] {
   background: #f9e79f;
-  font-style: italic;
-  text-align: right;
+  text-align: left;
   font-size: 20px;
 }
 
@@ -181,21 +180,12 @@ input:focus {
 
 @media (min-width: 768px) {
 
-  label[for="state"] {
-    display: flex;
-    align-self: flex-end;
-  }
-
-  select {
-    display: flex;
-  }
-
   input[type="text"],
   input[type="email"],
   input[type="tel"],
   input[type="address"],
   input[type="city"],
-  input[type="zip"],
+  input[type="number"],
   select {
     background: white;
     border: none;
@@ -216,8 +206,7 @@ input:focus {
 
     input[placeholder] {
       background: #f9e79f;
-      font-style: italic;
-      text-align: right;
+      text-align: left;
       font-size: 20px;
     }
 
@@ -234,6 +223,18 @@ input:focus {
       display: inline-flex;
       flex-direction: row;
       margin-right: auto;
+    }
+
+    #state {
+      width: 70%;
+    }
+
+    #topics {
+      width: 100%;
+    }
+
+    div {
+      display: flex;
     }
 
 }
