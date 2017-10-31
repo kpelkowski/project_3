@@ -44,7 +44,7 @@
           <div>
             <label class="container inln" for="state">State</label>
             <select class="user_input inln" id="state" name="user_state">
-              <option>--Choose State--</option>
+              <option selected hidden disabled>--Choose State--</option>
               <option value="Alabama">AL</option>
               <option value="Alaska">AK</option>
               <option value="Arizona">AZ</option>
@@ -115,7 +115,8 @@
          <p class="interests">Newsletter format</p><br>
              <input type="radio" id="HTML" value="HTML" name="news_format"><label class="option" for="HTML"> HTML</label><br>
              <input type="radio" id="plain" value="plain" name="news_format"><label class="option" for="plain"> Plain text</label><br>
-         <label class="interests">Other topics you'd like to hear about</label><br>
+
+         <label class="interests" for="topics">Other topics you'd like to hear about</label><br>
            <textarea class="user_input" id="topics" name="user_topics"></textarea>
       </fieldset>
 
